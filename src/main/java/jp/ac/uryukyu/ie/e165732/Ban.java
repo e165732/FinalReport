@@ -12,7 +12,7 @@ public class Ban {
         print2();
         for (int i3=0;i3<=8;){
             //System.out.printf("%s\n",i3);
-            judje();
+            jugde();
             //System.out.printf("end=%s\n",end);
             if (end == true){
                 break;
@@ -24,7 +24,7 @@ public class Ban {
                 break;
             }else {
                 //System.out.printf("%s\n", i3);
-                judje();
+                jugde();
                 //System.out.printf("end=%s\n",end);
                 if (end == true){
                     break;
@@ -32,7 +32,7 @@ public class Ban {
                     x_turn();
                     i3++;
                 }
-            }judje();
+            }jugde();
         }
     }
     public void o_turn(){
@@ -59,8 +59,8 @@ public class Ban {
         System.out.printf("%s%s%s,3,4,5,\n",ban[3],ban[4],ban[5]);
         System.out.printf("%s%s%s,6,7,8,\n",ban[6],ban[7],ban[8]);
     }
-    public void judje() {
-        //if (syoki[0] != "#" && syoki[1] != "#" && syoki[2] != "#" && syoki[3] != "#" && syoki[4] != "#" && syoki[5] != "#" && syoki[6] != "#" && syoki[7] != "#" && syoki[8] != "#") {
+    public void jugde() {
+        //if (ban[0] != "#" && ban[1] != "#" && ban[2] != "#" && ban[3] != "#" && ban[4] != "#" && ban[5] != "#" && ban[6] != "#" && ban[7] != "#" && ban[8] != "#") {
         if (ban[0] == ban[3] && ban[3] == ban[6] && ban[0] != "#" &&ban[3] != "#" &&ban[6] != "#" ) {
             System.out.printf("%sWIN\n", ban[0]);
             end = true;
