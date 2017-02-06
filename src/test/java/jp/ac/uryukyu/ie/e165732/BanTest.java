@@ -3,7 +3,7 @@ package jp.ac.uryukyu.ie.e165732;
 
 import org.junit.Test;
 
-public class BanTest {
+public class BanTest { //"#"が3×3の格子に代入されているかテストするクラス。
     String [] ban = new String[9]; //初期の盤を用意し、0〜8に#が代入されているかテストする。
     boolean end = false;//0=false
    @Test
